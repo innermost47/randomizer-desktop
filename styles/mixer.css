@@ -1,0 +1,75 @@
+#mixer {
+  width: 80%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: url("../images/mixer.png") no-repeat center;
+  background-size: cover;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.slices-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.slice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(85, 85, 85, 0.4);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.slice-active {
+  background-color: rgba(40, 40, 40, 1);
+}
+
+.volume-fader {
+  width: 20px;
+  height: 140px;
+  writing-mode: vertical-rl;
+  -webkit-appearance: slider-vertical;
+}
+
+.pan-fader {
+  width: 80px;
+}
+
+.mute-checkbox {
+  margin-top: 10px;
+}
+
+.arm-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.arm-button {
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flash {
+  background-color: #222 !important;
+}

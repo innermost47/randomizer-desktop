@@ -1,0 +1,101 @@
+#synths {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  margin-top: 70px;
+  justify-content: center;
+}
+
+.synth {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  margin: 20px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.mono {
+  background: url("../images/mono.png") no-repeat center;
+  background-size: cover;
+}
+
+.poly {
+  background: url("../images/poly.png") no-repeat center;
+  background-size: cover;
+}
+
+.synth-controls {
+  background-color: rgba(85, 85, 85, 0.9);
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.synth-faders {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.synths-faders {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: calc(100% / 16);
+  margin-top: 20px;
+}
+
+.instrument-fader {
+  width: 20px;
+  height: 140px;
+  writing-mode: vertical-rl;
+  -webkit-appearance: slider-vertical;
+}
+
+.instrument-fader-label {
+  color: white;
+  margin: 5px;
+}
+
+.filter-type-selector {
+  margin-top: 5px;
+}
+
+.instrument-label {
+  color: white;
+  margin: 5px;
+}
+
+.control-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.armed {
+  animation: changeColor 0.5s linear infinite;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: #555;
+  }
+  50% {
+    background-color: #333;
+  }
+  100% {
+    background-color: #555;
+  }
+}

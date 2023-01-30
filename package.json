@@ -1,0 +1,25 @@
+{
+  "name": "random-music-desktop",
+  "version": "1.0.0",
+  "description": "Welcome to our music creation application built with vanilla JavaScript! Our app combines both synthesizers and random music generation algorithms to produce unique and dynamic sounds. Along with the TR-808 drum kit, the app offers control tools to manipulate and mix the sounds together, allowing you to create your own custom music. Start exploring and let your creativity flow.",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron .",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "Anthony Charretier",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "electron": "^22.1.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  }
+}
