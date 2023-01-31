@@ -386,8 +386,10 @@ export class Menu {
     if (typeof Storage !== "undefined") {
       for (let i = 0; i < localStorage.length; i++) {
         let key = localStorage.key(i);
-        let track = JSON.parse(localStorage.getItem(key));
-        this.trackList.push(track);
+        if (key != "has-seen") {
+          let track = JSON.parse(localStorage.getItem(key));
+          this.trackList.push(track);
+        }
       }
     } else {
       console.log("Local storage not supported");
